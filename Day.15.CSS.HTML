@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+                                /* Task1  */
+
+    .box{
+        width: 80%;
+        max-width: 900px;
+        padding: 20px;
+        margin: 20px ;
+        background-color: rgb(2, 23, 185);
+    } 
+
+                                /* Task2 */
+
+    p{ 
+        font-size: 1.5em;
+    }
+
+                                /* Task3 */
+
+    style{ 
+        h1{ 
+            font-size: 5vw;
+        }
+    }
+
+                                /* Task4 */
+
+    h1{ 
+        font-family: Arial, sans-serif; 
+        font-size: 30px;
+    }
+
+    h2{ 
+        font-family: Georgia, serif;  
+        font-size: 20px;
+    } 
+
+    p{
+        font-family: Verdana,sans-serif; 
+        font-size: 18px;
+    }
+
+                                /* Tassk5 */
+
+    body{
+        background-color: white; 
+    }
+
+    @media(max-width:768px) { 
+        body{ 
+            background-color: rgb(94, 5, 237);
+        }
+    }
+
+                                /* Task6 */
+
+    body{ 
+        background-color: rgb(226, 7, 95);
+    }
+
+    @media(max-width:800px){ 
+    body{ 
+            background-color: rgb(113, 6, 189);
+        }
+    }
+
+                                /* Task7 */
+
+    .grid{  
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr ; 
+        gap: 10px;
+    }
+
+    .item{ 
+        background-color: rgb(213, 213, 12); 
+        padding: 30px; 
+        text-align: center;
+    } 
+
+    @media(max-width:1024px){ 
+    .grid{ 
+            grid-template-columns: 1fr 1fr;
+        }
+        
+    }
+
+    @media(max-width:600px){ 
+    .grid{ 
+            grid-template-columns: 1fr;
+        }
+    }
+
+                                    /* Task7 */
+
+    .grid{  
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr ; 
+        gap: 10px;
+    }
+
+    .box{ 
+        background-color: rgb(224, 95, 8); 
+        padding: 30px; 
+        text-align: center;
+    }
+
+    @media(min-width:600px) {
+    .grid{ 
+            grid-template-columns: repeat(2,1fr);
+        }    
+    }
+
+    @media(min-width:900px) {
+    .grid{ 
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+
+</style>
+</head>
+<body>
+
+                                        <!-- Task1 -->
+
+        <div class="box">
+            This is my box.
+        </div>
+
+                                        <!-- Task2 -->
+
+        <p>
+        This paragraph uses a font size of 1.5em
+        </p> 
+
+                                        <!-- Task3 -->
+
+        <h1>This is My Page </h1> 
+
+                                        <!-- Task4 --> 
+
+        <h1>welcome to page  </h1>
+
+    
+        <h2>This is My Page</h2>
+
+          <p> This paragraph uses</p> 
+
+                                        <!-- Task5 -->
+
+    <h1>Responsive Page</h1> 
+
+                                        <!-- Task6 -->
+
+        <h1>different device background</h1>
+
+            <div class="grid"> 
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div> 
+
+                                        <!-- Task7 -->
+
+            <div class="grid">  
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+        </div>
+        
+</body>
+</html>

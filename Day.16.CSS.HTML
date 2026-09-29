@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<body>
+
+    <style>
+
+        /* Task1 */
+
+    .btn{
+        background-color: blue;
+        color: white; 
+        padding: 15px 30px;
+        border: none;
+        transition: background-color 0.5;
+    }
+
+    .btn:hover{
+        background-color: red;
+    } 
+        /* Tas2 */
+
+    .box{ 
+        width: 150px; 
+        height: 150px; 
+        background-color: ligthblue;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        transition: transfrom 0.5s;
+    }
+
+    .box:hover{ 
+        transform: scale(1.2);
+    }
+
+        /* Task3 */
+
+    .card{ 
+        width: 200px; 
+        padding: 20px; 
+        background-color: lightblue; 
+        color: black; 
+        text-align: center; 
+        transition: all 0.5s;
+    } 
+
+    .card:hover{ 
+        background-color: blue; 
+        color: white; 
+        transform: scale(1.1); 
+        box-shadow: 0 10px 20px gray;
+    }  
+        /* Task4 */
+
+    .container{
+        width: 300px;
+        padding: 30px;
+        background-color: rgb(124, 207, 235); 
+        text-align: center;
+    }
+
+    .content{ 
+        opacity: 0;
+        transition: opacity 0.5s;
+    } 
+
+    .container:hover .content{ 
+        opacity: 1;
+    }
+
+    </style>
+
+                                            <!-- Task1 -->
+
+        <button class="btn">Hover Me</button>
+
+                                            <!-- Task2 -->
+
+        <div class="box">Hover Me</div> 
+
+                                            <!-- Task3 -->
+
+    <div class="card">
+
+        <h2>My Card</h2>
+
+        <p>Hover over me</p>
+
+    </div>
+
+                                            <!-- Task4 -->
+
+        <div class="contaier">
+
+        <h3>Hover Me</h3>
+
+            <p class="content"> 
+                This content appears when you hover!
+            </p>
+       </div>
+       
+</body>
+</html> 

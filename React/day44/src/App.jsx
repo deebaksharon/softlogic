@@ -34,7 +34,7 @@ function App() {
           alt="Profile"
           width="100"
         />
-        <h3>Vijay</h3>
+        <h3>Deebak sharon</h3>
         <p>React Developer</p>
         <p>I am learning React and Tailwind CSS.</p>
         <button onClick={() => setFollow(!follow)}>

@@ -304,82 +304,15 @@
             // main();
 
 
-
-
-
-
-
-//             let promise = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         resolve("welcome to js")
-//     }, 2000);
-// });
-// promise.then((result) => {
-//     console.log(result);
-// });
-
-let promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        reject("Invalid Data");
-    }, 3000);
-});
-
-promise.then((result) => {
-    console.log(result);
-})
-    .catch((error) => {
-        console.log(error);
-    });
-
-function checkNumber(num) {
-    return new Promise((resolve, reject) => {
-        if (num % 2 !== 0) {
-            resolve("Number is Odd");
-        } else {
-            reject("Number is Even");
-        }
-    });
-}
-checkNumber(7)
-    .then((result) => {
-        console.log(result);
-    })
-    .catch((error) => {
-        console.log(error);
-    });
-
-function checkAge(age) {
-    return new Promise((resolve, reject) => {
-        if (age >= 18) {
-            resolve("Eligible for Employement");
-        } else {
-            reject("Not eligible for Employement");
-        }
-    });
-}
-
-checkAge(20)
-    .then((result) => {
-        console.log(result);
-    })
-    .catch((error) => {
-        console.log(error);
-    });
-
-function Sum(a, b) {
-    return new Promise((resolve, reject) => {
-        if (b < 0) {
-            reject("b cannot be negative");
-        } else {
-            resolve(a + b);
-        }
-    });
-}
-
-
     </script>
+
 </head>
 <body>
-    <h1>Welcome To Page</h1>  
+
+
+    <h1>Welcome To Page</h1>
+
+
 </body>
+
 </html>

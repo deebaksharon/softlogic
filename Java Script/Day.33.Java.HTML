@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //Q1
+
+            let arr1 = [1,2,3,4,5];
+            let [first,b,c,d,last] = arr1;
+            console.log("Q1");
+            console.log("First element: " + first);
+            console.log("Last Element: " + last);
+
+        //Q2
+
+            let arr2 = [100,200,300];
+            let [x, ,z] = arr2;
+            console.log("Q2:");
+            console.log("First Value: " + x);
+            console.log("Third value: " + z);
+
+        //Q3
+
+            let arr3 = [1,2,3,4,5];
+            let [a, ...rest] = arr3;
+            console.log("Q3:");
+            console.log("First Element: " + a);
+            console.log("Rest Elements: ");
+            console.log(rest);
+
+        //Q4
+
+            let a1 = [1,2];
+            let b1 = [3,4];
+            let merged = [...a1,...b1];
+            console.log("Q4: Merged Array");
+            console.log(merged);
+
+        //Q5
+
+            let original = [10,20,30];
+            let copied = [...original];
+            console.log("Q5: Copied Array");
+            console.log(copied);
+
+        //Q6
+
+            let product = {
+            id: 1,
+            name: "Mobile",
+            price: 15000
+            };
+            let { name, price} = product;
+            console.log("Q6:");
+            console.log("Name: " + name);
+            console.log("Price: " + price);
+
+        //Q7
+            
+            let user = { name: "Deebak", age: 25 };
+            let {name: fullName} = user;
+            console.log("Q7: ");
+            console.log("Full Name: " + fullName);
+
+        //Q8
+
+            let student = {
+            marks: {
+                math: 85,
+                science: 80
+                }
+            };
+            let {marks: {math, science}} = student;
+            console.log("Q8: ");
+            console.log("Math: " + math);
+            console.log("Science: " + science);
+
+        //Q9
+
+            function show({name, age})
+            {
+                console.log("Name: " + name);
+                console.log("Age: " + age);
+            }
+            let user2 = { name: "Deeabk", age: 22};
+            console.log("Q9: ");
+            show(user2);
+
+        //Q10
+
+            let arr4 = [10,20,30,40];
+            let [ , ...restElements] = arr4;
+            let newArray = [100,200, ...restElements];
+            console.log("Q10: ");
+            console.log(newArray);
+
+
+
+    </script>
+    
+</body>
+</html>
